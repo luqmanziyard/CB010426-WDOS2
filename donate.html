@@ -73,7 +73,7 @@
           <button
             class="buy-now-button"
             onclick="
-              orderNow('Zesta Silver Tips', 24000)
+       
             "
           >
             Buy Now
@@ -92,7 +92,14 @@
         <img src="traditional-masks copy.jpeg" alt="" />
         <p>Traditional Masks - Rs. 2,450</p>
         <div>
-          <button class="buy-now-button">Buy Now</button>
+          <button
+            class="buy-now-button"
+            onclick="
+              buyNow()
+            "
+          >
+            Buy Now
+          </button>
           <button
             class="buy-now-button"
             onclick="
@@ -129,6 +136,7 @@
       >
         View Favoruites
       </button>
+
       <button
         class="action-button"
         onclick="
@@ -176,9 +184,11 @@
       };
 
       let order = {};
+      let cart = {};
 
-      function orderNow(name, price) {}
+      let orderCounter = 0;
 
+      //adding an item to fav and displaying an alert
       function addToFav(name, price) {
         favOrder.name = name;
         favOrder.price = price;
@@ -187,9 +197,21 @@
 
         localStorage.setItem("favOrder", JSON.stringify(favOrder));
 
-        alert("Your order is saved to favourites");
+        alert(
+          `Your order is saved to favourites.\n Product: ${name}\n Price: ${price}`
+        );
       }
 
+      //adding items to the cart
+      function buyNow(name, price) {
+        orderCounter++;
+        let currentOrder = {
+          Name: name,
+          Price: price,
+        };
+      }
+
+      //viewing what is selected as favourites
       function viewFav() {
         let fromLocalStore = JSON.parse(localStorage.getItem("favOrder"));
         console.log(
@@ -201,7 +223,16 @@
         Price: ${fromLocalStore.price}\n`);
       }
 
-      function orderFav() {}
+      function orderFav() {
+        let fromLocalStore = JSON.parse(localStorage.getItem("favOrder"));
+        console.log(
+          `from local store ${fromLocalStore.name} and ${fromLocalStore.price}`
+        );
+
+        alert(
+          `Your order has been added to orders.\n Name: ${fromLocalStore.name} \n Price: ${fromLocalStore.price}`
+        );
+      }
 
       function checkLoyalty() {
         let fromLocalStore = JSON.parse(localStorage.getItem("favOrder"));
