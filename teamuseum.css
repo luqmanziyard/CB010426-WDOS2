@@ -1,0 +1,312 @@
+
+
+
+/* Hero section */
+.hero-section {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.hero-image {
+    height: 700px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-description {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none; 
+  }
+/* Hero section */
+
+
+.image-grid {
+    display: flex;
+    margin: 30px;
+    width: 75%;
+}
+
+.grid-image {
+    height: 300px;
+    width: 260px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.museum-description {
+    margin: 20px;
+    margin-left:180px ;
+    width: 60%;
+}
+
+.museum-description h2 {
+    margin-bottom: 20px;
+}
+
+.museum-description p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.location-div {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(228, 252, 255);
+    border-radius: 20px;
+    position: relative; 
+    margin-bottom: 40px;
+}
+
+.location-div p {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+.location-map {
+    margin-bottom: 40px;
+}
+
+  /* Ticket Booking section */
+  .js-section {
+    width: 75%;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+.js-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+.booking-donate-section {
+    display: flex;
+    column-gap: 10px;
+}
+
+.booking {
+    width: 60%;
+    background-color: rgb(222, 255, 223);
+    padding: 20px 30px;
+    position: relative;
+    border: solid;
+    border-radius: 20px;
+    border-width: 2px;
+
+}
+
+.booking h2 {
+    text-align: start;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.booking p {
+    margin-bottom: 20px;
+} 
+
+.donate {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(222, 255, 223) ;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+.donate h2 {
+    text-align: start;
+    font-weight: 600;
+}
+
+.type-of-pass {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.number-of-people {
+    margin-bottom: 20px; 
+    gap: 60px;
+    display: inline-block;
+    
+}
+
+.number-of-people input {
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 10px ;
+    width: 200px;
+}
+
+.number-of-people input:active {
+    border: none;
+}
+
+.select-hours {
+    margin-bottom: 20px;
+    border: none;
+
+}
+.select-hours label {
+    margin-right: 10px;
+}
+
+.select-hours select {
+    padding: 7px;
+}
+
+.type-of-extras {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.view-total-button {
+    padding: 10px;
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+}
+
+.empty-div{
+    height: 60px;
+}
+
+.total-orders-box {
+    width: 40%;
+    padding: 20px 20px;
+    background-color: rgb(246, 160, 160);
+    position: relative;  
+}
+
+
+.display-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.donation-amounts {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 15px;
+
+}
+
+.user-details {
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+.name-field {
+    margin-right: 100px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.user-details input {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+
+}
+
+.card-number {
+    width: 200px;
+    margin-right: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.sub-inputs {
+    width: 40px;
+    margin-right: 5px;
+    border: none; 
+    padding: 5px;
+}
+
+.donate-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 35%;
+    border: none;
+    border-radius: 20px;
+    background-color: green ;
+    color: white;
+
+}
+
+.place-order-button {
+    padding: 10px 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: green ;
+    color: white;
+}
+
+.add-to-order-button {
+    padding: 10px 20px;
+    position: absolute;
+    right: 160px;
+    bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: green ;
+    color: white;
+}
+
+.action-buttons {
+    margin: auto;
+    width: 75%;
+    margin-top: 30px;
+    background-color: red;
+}
+
+.card-details h4 {
+
+    margin-bottom: 20px;
+}
+
+.user-details input, .card-details input {
+    padding: 10px;
+}
+

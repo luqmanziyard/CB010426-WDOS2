@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase and Donate</title>
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="donate.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-section">
+        <img class="logo-image" src="logo-image.png" alt="" />
+      </div>
+      <div class="menu-items-section">
+        <a class="menu-title" href="home.html">
+          <h2 class="menu-title">Home</h2>
+        </a>
+        <a class="menu-title" href="teaplantations.html">
+          <h2 class="menu-title">
+            Tea <br />
+            Plantations
+          </h2>
+        </a>
+        <a class="menu-title" href="teamuseum.html">
+          <h2 class="menu-title">
+            Ceylon <br />
+            Tea Museum
+          </h2>
+        </a>
+        <a class="menu-title" href="byproducts.html">
+          <h2 class="menu-title">By Products <br />Of Tea</h2>
+        </a>
+        <a class="menu-title" href="teasales.html">
+          <h2 class="menu-title">Tea <br />Sales</h2>
+        </a>
+        <a class="menu-title" href="donate.html">
+          <h2 class="menu-title">Donate</h2>
+        </a>
+      </div>
+      <div class="empty-section"></div>
+    </div>
+
+    <div class="hero-section">
+      <img class="hero-image" src="purchase-and-donate-banner.jpeg" alt="" />
+      <div class="overlay"></div>
+      <h1 class="hero-text">Purchase and Donate</h1>
+      <p class="hero-description"></p>
+    </div>
+
+    <div class="why-donate-section">
+      <h2>Why Donate</h2>
+      <p>
+        We use this donation to to uplift and protect our tea plantations
+        community, tea museums and serve better to the upcoming tourist. You
+        could donate through the website or buy or merchandise. You’re
+        contributtion could help us a lot.
+      </p>
+
+      <button class="donate-button">Donate</button>
+    </div>
+
+    <div class="products-section">
+      <div class="product">
+        <img src="zesta-siver-tips copy.jpeg" alt="" />
+        <p>Zesta Silver Tips (1kg) - Rs.24,000</p>
+        <div>
+          <button
+            class="buy-now-button"
+            onclick="
+              orderNow('Zesta Silver Tips', 24000)
+            "
+          >
+            Buy Now
+          </button>
+          <button
+            class="buy-now-button"
+            onclick="
+              addToFav('Silver Tips', 24000)
+          "
+          >
+            Add to Fav
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="traditional-masks copy.jpeg" alt="" />
+        <p>Traditional Masks - Rs. 2,450</p>
+        <div>
+          <button class="buy-now-button">Buy Now</button>
+          <button
+            class="buy-now-button"
+            onclick="
+              addToFav('Traditional Mask', 2450)
+          "
+          >
+            Add to Fav
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="antique-pots copy.jpeg" alt="" />
+        <p>Antique Pots - Rs. 6,200</p>
+        <div>
+          <button class="buy-now-button">Buy Now</button>
+          <button
+            class="buy-now-button"
+            onclick="
+              addToFav('Antique Pots', 6200)
+          "
+          >
+            Add to Fav
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button
+        class="action-button"
+        onclick="
+          viewFav();
+        "
+      >
+        View Favoruites
+      </button>
+      <button
+        class="action-button"
+        onclick="
+          orderFav()
+      "
+      >
+        Order Favoruite
+      </button>
+      <button
+        class="action-button"
+        onclick="
+          checkLoyalty()
+    "
+      >
+        Check Loyalty Points
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-copyright-section">
+        <p class="copyright-text">
+          Copyright © 2017 Tea Exporters Association Sri Lanka. All rights
+          reserved
+        </p>
+      </div>
+      <div class="footer-contact-section">
+        <p>+94-11-2433308</p>
+        <p>admin@teasrilanka.org</p>
+      </div>
+      <div class="footer-address-section">
+        <p>
+          Tea Exporters Association<br />
+          1st Floor,<br />
+          Ceylon Chamber Of Commerce,<br />
+          No. 50, Navam Mawatha, Colombo 2
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let favOrder = {
+        name: "",
+        price: 0,
+      };
+
+      let order = {};
+
+      function orderNow(name, price) {}
+
+      function addToFav(name, price) {
+        favOrder.name = name;
+        favOrder.price = price;
+
+        console.log(favOrder);
+
+        localStorage.setItem("favOrder", JSON.stringify(favOrder));
+
+        alert("Your order is saved to favourites");
+      }
+
+      function viewFav() {
+        let fromLocalStore = JSON.parse(localStorage.getItem("favOrder"));
+        console.log(
+          `from local store ${fromLocalStore.name} and ${fromLocalStore.price}`
+        );
+
+        alert(`Your current favourite is:\n
+        Item: ${fromLocalStore.name}\n
+        Price: ${fromLocalStore.price}\n`);
+      }
+
+      function orderFav() {}
+
+      function checkLoyalty() {
+        let fromLocalStore = JSON.parse(localStorage.getItem("favOrder"));
+
+        if (fromLocalStore.price) {
+        }
+      }
+    </script>
+  </body>
+</html>

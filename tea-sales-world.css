@@ -1,0 +1,74 @@
+/* Hero section */
+.hero-section {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+
+}
+
+.hero-image {
+    height: 700px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none; 
+  }
+
+
+.image-boxes {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.image-box {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.paragraph-box {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.paragraph-section {
+    margin: 0px 40px;
+    background-color: rgb(228, 252, 255);
+    padding: 10px;
+
+}
+
+.paragraph-section h2 {
+    margin-bottom: 10px;
+}
+
+.paragraph-section p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.read-more-link {
+    margin-left: 160px;
+}
+
+

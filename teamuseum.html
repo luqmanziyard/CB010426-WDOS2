@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Museum</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="teamuseum.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-section">
+        <img class="logo-image" src="logo-image.png" alt="" />
+      </div>
+      <div class="menu-items-section">
+        <a class="menu-title" href="home.html">
+          <h2 class="menu-title">Home</h2>
+        </a>
+        <a class="menu-title" href="teaplantations.html">
+          <h2 class="menu-title">
+            Tea <br />
+            Plantations
+          </h2>
+        </a>
+        <a class="menu-title" href="teamuseum.html">
+          <h2 class="menu-title">
+            Ceylon <br />
+            Tea Museum
+          </h2>
+        </a>
+        <a class="menu-title" href="byproducts.html">
+          <h2 class="menu-title">By Products <br />Of Tea</h2>
+        </a>
+        <a class="menu-title" href="teasales.html">
+          <h2 class="menu-title">Tea <br />Sales</h2>
+        </a>
+        <a class="menu-title" href="donate.html">
+          <h2 class="menu-title">Donate</h2>
+        </a>
+      </div>
+      <div class="empty-section"></div>
+    </div>
+
+    <div class="hero-section">
+      <img class="hero-image" src="ceylon-musuem-banner.webp" alt="" />
+      <div class="overlay"></div>
+      <h1 class="hero-text">Ceylon Tea Museum</h1>
+      <p class="hero-description">Preserving the Legacy of Ceylon Tea</p>
+    </div>
+
+    <center>
+      <div class="image-grid">
+        <img class="grid-image" src="ceylon-musuem-1.webp" alt="" />
+        <img class="grid-image" src="ceylon-musuem-2.jpeg" alt="" />
+        <img class="grid-image" src="ceylon-musuem-3.webp" alt="" />
+        <img class="grid-image" src="ceylon-musuem-4.jpeg" alt="" />
+      </div>
+    </center>
+
+    <div class="museum-description">
+      <h2>A Captivating Journey through Tea History</h2>
+      <p>
+        The Ceylon Tea Museum, located in Hantane, Kandy, is a fascinating
+        destination for tea enthusiasts and history buffs alike. Housed in a
+        restored tea factory, the museum provides a captivating journey into the
+        origins, production, and cultural significance of Ceylon tea. The museum
+        showcases the evolution of Sri Lanka's tea industry, highlighting its
+        colonial past and the impact of tea cultivation on the country's
+        economy.<br /><br />
+      </p>
+
+      <h2>Immersive Exhibits and Live Demonstrations</h2>
+      <p>
+        Upon entering the Ceylon Tea Museum, visitors are greeted with an
+        immersive experience that takes them through the entire tea production
+        process. The museum exhibits various artifacts, including vintage
+        machinery, tools, and photographs, showcasing the machinery and
+        techniques used in the early days of tea manufacturing. Visitors can
+        learn about the different tea varieties produced in Sri Lanka and gain
+        insights into the art of tea tasting and grading.<br /><br />
+      </p>
+
+      <h2>Tea Tasting and Scenic Views</h2>
+      <p>
+        One of the highlights of the museum is the opportunity to witness a live
+        tea production demonstration. Visitors can observe the intricate steps
+        involved in plucking, withering, rolling, fermenting, and drying the tea
+        leaves. Knowledgeable guides provide detailed explanations, offering a
+        deeper understanding of the craftsmanship and dedication required to
+        produce high-quality Ceylon tea. Additionally, the museum boasts a
+        charming tea café where visitors can savor a cup of freshly brewed tea
+        while enjoying panoramic views of the surrounding tea plantations. The
+        Ceylon Tea Museum is a must-visit destination for anyone seeking to
+        unravel the rich history and heritage behind Sri Lanka's renowned tea
+        industry.<br /><br />
+      </p>
+
+      <h2>Location</h2>
+
+      <div class="location-map">
+        <iframe
+          width="800"
+          height="400"
+          frameborder="0"
+          src="https://www.bing.com/maps/embed?h=400&w=800&cp=7.268608821899278~80.63265323638916&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+          scrolling="no"
+        >
+        </iframe>
+        <div
+          style="
+            white-space: nowrap;
+            text-align: center;
+            width: 800px;
+            padding: 6px 0;
+          "
+        >
+          <a
+            id="largeMapLink"
+            target="_blank"
+            href="https://www.bing.com/maps?cp=7.268608821899278~80.63265323638916&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD"
+            >View Larger Map</a
+          >
+          &nbsp; | &nbsp;
+          <a
+            id="dirMapLink"
+            target="_blank"
+            href="https://www.bing.com/maps/directions?cp=7.268608821899278~80.63265323638916&amp;sty=r&amp;lvl=16&amp;rtp=~pos.7.268608821899278_80.63265323638916____&amp;FORM=MBEDLD"
+            >Get Directions</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="js-section">
+      <div class="booking-donate-section">
+        <div class="booking">
+          <h2 >Ticket Booking</h2>
+           <!-- Description Section -->
+           <p class="heading-description">Book a train ticket which includes a visit to the museum </p>
+          <!--Type of Pass-->
+          <div class="type-of-pass">
+            <input
+              type="radio"
+              name="pass-check-box"
+              id="local-pass"
+              value="local-pass"
+              onclick="
+                document.querySelector('.message').innerHTML = 'Only add the number in the adults and children input'
+              "
+            />
+            <label for="local-pass">Local pass</label><br />
+            <input
+              type="radio"
+              name="pass-check-box"
+              id="child-pass"
+              value="child-pass"
+              onclick="
+                document.querySelector('.message').innerHTML = 'Only add the numbers in the child, child below 16 and child below 6'
+              "
+            />
+            <label for="child-pass"> Child Pass</label><br />
+            <input
+              type="radio"
+              name="pass-check-box"
+              id="foreigner-pass"
+              value="foreigner-pass"
+              onclick="
+                document.querySelector('.message').innerHTML = 'Only add the numbers in the adults and children section'
+              "
+            />
+            <label for="foreigner-pass"> Foreigner Pass</label><br />
+          </div>
+
+         
+
+          <!-- Message -->
+          <p class="message"></p>
+
+          <!-- Num of People -->
+          <div class="number-of-people">
+            <input
+              type="text"
+              id="number-of-adults"
+              placeholder="Number of Adults"
+            />
+            <br />
+            <input
+              type="text"
+              id="number-of-children"
+              placeholder="Number of Children"
+            />
+            <br />
+            <input
+              type="text"
+              id="number-of-children-15"
+              placeholder="Number of Children Below 15"
+            />
+            <br />
+            <input
+              type="text"
+              id="number-of-children-6"
+              placeholder="Number of Children Below 6"
+            />
+          </div>
+
+          <!--Selected Hours-->
+          <div class="select-hours">
+            <label for="hours">Choose a duration: </label>
+
+            <select name="hours" id="hours">
+              <option value="3 Hours">3 Hours</option>
+              <option value="1/2 Day">1/2 Day</option>
+              <option value="Full Day">Full Day</option>
+            </select>
+          </div>
+
+          <!--Extras-->
+          <div class="type-of-extras">
+            <input
+              type="checkbox"
+              name="type-of-extras"
+              id="annual-pass"
+              value="Annual Pass"
+            />
+            <label for="annual-pass"> Annual Pass</label><br />
+            <input
+              type="checkbox"
+              name="type-of-extras"
+              id="food-token"
+              value="Food Token"
+            />
+            <label for="food-token"> Food Token</label><br />
+          </div>
+
+          <!--Total-->
+          <p class="display-text">
+            Cost of Current Order: <span class="cost-current-order"> 0</span>
+          </p class="display-text">
+          <p class="display-text">Overall Orders: <span class="overall-orders">0</span></p>
+          <p class="display-text">Overall Cost of Orders: <span class="cost-overall-orders">0</span></p>
+          <div class="empty-div"></div>
+
+          <!--Add to Order Button-->
+          <button
+            class="add-to-order-button"
+            onclick="
+              addToOrder()
+              deleteItems()
+            "
+          >
+            Add to Order
+          </button>
+
+
+          <!--Place Order Button-->
+          <button
+            class="place-order-button"
+            onclick="
+              placeOrder();
+            "
+          >
+            Place Order
+          </button>
+
+          <div class="empty-div"></div>
+        </div>
+
+        <div class="donate"> 
+          <h2>Donate</h2>
+            <!--Amounts of donation-->
+            <div class="donation-amounts">
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-100"
+                value="100"
+                
+              />
+                <label for="local-pass">100</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-250"
+                value="250"
+                
+              />
+                <label for="local-pass">250</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-500"
+                value="500"
+                
+              />
+                <label for="local-pass">500</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-1000"
+                value="1000"
+                
+              />
+                <label for="local-pass">1000</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-2500"
+                value="2500"
+                
+              />
+                <label for="local-pass">2500</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-5000"
+                value="5000"
+                
+              />
+                <label for="local-pass">5000</label>
+              </div>
+
+              <div class="check-box">
+                <input
+                type="radio"
+                name="donation-check-box"
+                id="donation-10000"
+                value="10000"
+                
+              />
+                <label for="local-pass">10000</label>
+              </div>
+              
+            </div>
+
+            <!--User details-->
+            <div class="user-details">
+              <input type="text" name="" id="user-name" placeholder="Name">
+              <input type="text" name="" id="user-name" placeholder="Address">
+            </div>
+
+            <!--Card of details-->
+            <div class="card-details">
+              <h4> Card Details</h4>
+              <input class="card-number" type="text" name="" id="" placeholder="Card Number">
+              <input class="sub-inputs" type="text" name="" id="" placeholder="CCV">
+              <input class="sub-inputs" type="text" name="" id="" placeholder="Exp">
+            </div>
+
+            <!--Donate Button-->
+            <center>
+              <button class="donate-button" onclick="
+                getDonation()
+                ">
+                Donate
+              </button>
+            </center>
+            
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-copyright-section">
+        <p class="copyright-text">
+          Copyright © 2017 Tea Exporters Association Sri Lanka. All rights
+          reserved
+        </p>
+      </div>
+      <div class="footer-contact-section">
+        <p>+94-11-2433308</p>
+        <p>admin@teasrilanka.org</p>
+      </div>
+      <div class="footer-address-section">
+        <p>
+          Tea Exporters Association<br />
+          1st Floor,<br />
+          Ceylon Chamber Of Commerce,<br />
+          No. 50, Navam Mawatha, Colombo 2
+        </p>
+      </div>
+    </div>
+
+    
+  
+
+    <script>
+      //total order count at the beginning
+      let orderCount = 0;
+
+      //total order value at the beginnning
+      let orderVal = 0;
+
+      //total orders value
+      let totalOrderVal = 0;
+
+
+
+      //adding to order funtion
+      function addToOrder() {
+        
+        //keeping track of the order counts
+        orderCount++;
+
+
+        //pass
+        let pass = "";
+
+        //getting the selected value from the radio button
+        const passVal = document.querySelector(
+          'input[name="pass-check-box"]:checked'
+        ).value;
+
+        pass = passVal;
+
+        /*Uncaught TypeError: Cannot read properties of null (reading 'value')
+        if no value is sected an error will be thrown
+        */
+
+        //number of people
+        let numberOfAdults = document.getElementById("number-of-adults").value;
+        let numberOfChildren =
+          document.getElementById("number-of-children").value;
+        let numberOfChildren15 = document.getElementById(
+          "number-of-children-15"
+        ).value;
+        let numberOfChildren6 = document.getElementById(
+          "number-of-children-6"
+        ).value;
+
+        //duration
+        let duration = document.getElementById("hours").value;
+
+        //extras taken as a array or list
+        const extrasList = document.querySelectorAll(
+          'input[name="type-of-extras"]:checked'
+        );
+
+        // calculating the order total without extras
+        if (pass === "local-pass") {
+          let adultTotal = numberOfAdults * 3000;
+          let childTotal = numberOfChildren * 1500;
+
+          orderVal = adultTotal + childTotal;
+          
+
+          //checks if it's more than 1/2 day
+          if (duration === "1/2 Day" && numberOfAdults > 0) {
+            orderVal = orderVal + 250;
+          }
+
+          if (duration === "Full Day" && numberOfAdults > 0) {
+            orderVal = orderVal + 500;
+          }
+        } else if (pass === "child-pass") {
+          let child15Total = numberOfAdults * 1000;
+          let child6Total = numberOfChildren * 500;
+          orderVal = child15Total + child6Total;
+        } else if (pass === "foreigner-pass") {
+          let adultTotal = numberOfAdults * 5000;
+          let childTotal = numberOfChildren * 2500;
+          orderVal = adultTotal + childTotal;
+
+          //checks if it's more than 3 hours
+          if (duration === "3 Hours" && numberOfAdults > 0) {
+            orderVal = orderVal + 100;
+          }
+
+          //checks if it's more than 1/2 day
+          if (duration === "1/2 Day" && numberOfAdults > 0) {
+            orderVal = orderVal + 500;
+          }
+
+          //checks if it's more than full day
+          if (duration === "Full Day" && numberOfAdults > 0) {
+            orderVal = orderVal + 1000;
+          }
+        }
+
+        //Checking if they want an anual pass
+        try {
+          if (
+            extrasList[0].value === "Annual Pass" ||
+            extrasList[1].value === "Annual Pass"
+          ) {
+            let totalTokens =
+              Number(numberOfAdults) +
+              Number(numberOfChildren) +
+              Number(numberOfChildren15) +
+              Number(numberOfChildren6);
+
+              orderVal = orderVal + totalTokens * 5000;
+          }
+
+          //Checking if they want an food token
+          if (
+            extrasList[0].value === "Food Token" ||
+            extrasList[1].value === "Food Token"
+          ) {
+            let totalTokens =
+              numberOfAdults +
+              numberOfChildren +
+              numberOfChildren15 +
+              numberOfChildren6;
+
+              orderVal = orderVal + totalTokens * 500;
+          }
+        } catch (error) {}
+
+        //showing the final total on the page
+        document.querySelector('.cost-current-order').innerHTML = orderVal;
+
+        //showing order count on page 
+        document.querySelector('.overall-orders').innerHTML = orderCount;
+
+        //showing the overall value on page 
+        let currentTotal = Number(document.querySelector('.cost-overall-orders').innerHTML);
+        totalOrderVal = currentTotal + orderVal;
+        document.querySelector('.cost-overall-orders').innerHTML = totalOrderVal;
+
+      }
+
+      //resetting all the
+      function deleteItems() {
+        document.getElementById("number-of-adults").value = "";
+        document.getElementById("number-of-children").value = "";
+        document.getElementById("number-of-children-15").value = "";
+        document.getElementById("number-of-children-6").value = "";
+
+        document.getElementById("local-pass").checked = false;
+        document.getElementById("foreigner-pass").checked = false;
+        document.getElementById("child-pass").checked = false;
+
+        document.getElementById("annual-pass").checked = false;
+        document.getElementById("food-token").checked = false;
+
+        document.querySelector(".message").innerHTML = "";
+      }
+    
+      //funtion to get donation
+      function getDonation() {
+
+        const donationVal = document.querySelector(
+          'input[name="donation-check-box"]:checked'
+        ).value;
+
+        let userName = document.getElementById('user-name').value;
+
+        console.log(donationVal);
+        console.log(userName);
+
+        alert(`Thank You ${userName} for your donation! We have succesfully recieved a donation of ${donationVal} Rupees.`)
+
+      }
+    
+   
+      function placeOrder() {
+
+        alert('Your order has been placed')
+
+        document.getElementById("number-of-adults").value = "";
+        document.getElementById("number-of-children").value = "";
+        document.getElementById("number-of-children-15").value = "";
+        document.getElementById("number-of-children-6").value = "";
+
+        document.getElementById("local-pass").checked = false;
+        document.getElementById("foreigner-pass").checked = false;
+        document.getElementById("child-pass").checked = false;
+
+        document.getElementById("annual-pass").checked = false;
+        document.getElementById("food-token").checked = false;
+
+        document.querySelector(".message").innerHTML = "";
+
+        document.querySelector(".cost-current-order").innerHTML = "0";
+        document.querySelector(".overall-orders").innerHTML = "0";
+        document.querySelector(".cost-overall-orders").innerHTML = "0";
+      }
+    </script>
+  </body>
+</html>

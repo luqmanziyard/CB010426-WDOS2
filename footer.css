@@ -1,0 +1,30 @@
+
+p {
+    font-size: 12px;
+}
+
+.footer {
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 80px;
+    
+ 
+}
+
+.footer-copyright-section {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.footer-contact-section {
+    flex: 1;
+    
+}
+.footer-address-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
